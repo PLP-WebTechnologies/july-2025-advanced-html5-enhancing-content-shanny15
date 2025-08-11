@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Form and Multi-section Page</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to My Multi-Section Page</h1>
+        <p>Demonstrating lists, tables, media, and a complete HTML5 form</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#lists">Lists</a></li>
+            <li><a href="#table">Table</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#form">Form</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Lists Section -->
+        <section id="lists">
+            <h2>My Favorite Programming Languages</h2>
+            <ol>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>HTML & CSS</li>
+            </ol>
+
+            <h3>Key Features I Love</h3>
+            <ul>
+                <li>JavaScript: Versatile and works in browsers and servers</li>
+                <li>Python: Clean syntax and great libraries</li>
+                <li>HTML & CSS: Foundation for all web design</li>
+            </ul>
+        </section>
+
+        <!-- Table Section -->
+        <section id="table">
+            <h2>Programming Language Popularity (Sample Data)</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Language</th>
+                        <th>Year Created</th>
+                        <th>Primary Use</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>1995</td>
+                        <td>Web Development</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>1991</td>
+                        <td>Data Science, Web Development</td>
+                    </tr>
+                    <tr>
+                        <td>HTML</td>
+                        <td>1993</td>
+                        <td>Web Structure</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Media Section -->
+        <section id="media">
+            <h2>Media Showcase</h2>
+            <img src="https://via.placeholder.com/500x300" alt="Sample Placeholder Image">
+            <p>Here’s an embedded audio clip:</p>
+            <audio controls>
+                <source src="sample-audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <p>And here’s a sample video:</p>
+            <video controls width="500">
+                <source src="sample-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <!-- Form Section -->
+        <section id="form">
+            <h2>Registration Form</h2>
+            <form action="#" method="post" autocomplete="on">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required minlength="6" pattern="[A-Za-z0-9]+">
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+                    <label for="language">Favorite Programming Language:</label>
+                    <select id="language" name="language" required>
+                        <option value="">--Select--</option>
+                        <option value="js">JavaScript</option>
+                        <option value="py">Python</option>
+                        <option value="html">HTML & CSS</option>
+                    </select>
+
+                    <p>Subscription Plan:</p>
+                    <input type="radio" id="basic" name="plan" value="basic" required>
+                    <label for="basic">Basic</label>
+                    <input type="radio" id="premium" name="plan" value="premium">
+                    <label for="premium">Premium</label>
+
+                    <p>
+                        <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                        <label for="newsletter">Subscribe to Newsletter</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Details</legend>
+                    <label for="bio">Short Bio:</label>
+                    <textarea id="bio" name="bio" placeholder="Tell us a bit about yourself..." minlength="10"></textarea>
+
+                    <label for="website">Personal Website:</label>
+                    <input type="url" id="website" name="website" placeholder="https://example.com">
+
+                    <label for="color">Favorite Color:</label>
+                    <input type="color" id="color" name="color">
+
+                    <label for="file">Upload Profile Picture:</label>
+                    <input type="file" id="file" name="file" accept="image/*">
+                </fieldset>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Multi-Section Page Demo. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
